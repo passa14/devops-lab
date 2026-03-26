@@ -10,6 +10,10 @@ def calculate_tax(income):
         return 27500 + (income - 500000) * 0.15
     else:
         return 65000 + (income - 750000) * 0.20
+    
+def format_tax_summary(income):
+    tax = calculate_tax(income)
+    return f"Income: {income:,} THB -> Tax: {tax:,.2f} THB"
 
 if __name__ == "__main__":
     test_incomes = [100000, 250000, 400000, 600000, 1000000]
