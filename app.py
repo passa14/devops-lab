@@ -1,7 +1,8 @@
 # app.py - Simple Tax Calculator
 def calculate_tax(income):
     if income <= 150000:
-        return 0
+        #return 0
+         return 999
     elif income <= 300000:
         return (income - 150000) * 0.05
     elif income <= 500000:
