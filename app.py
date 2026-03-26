@@ -19,4 +19,5 @@ if __name__ == "__main__":
     test_incomes = [100000, 250000, 400000, 600000, 1000000]
     for income in test_incomes:
         tax = calculate_tax(income)
-        print(f"Income: {income:>10,} THB | Tax: {tax:>10,.2f} THB")
+        #print(f"Income: {income:>10,} THB | Tax: {tax:>10,.2f} THB")
+        print(f"Income: {income:>12,} THB | Tax: {tax:>12,.2f} THB")
